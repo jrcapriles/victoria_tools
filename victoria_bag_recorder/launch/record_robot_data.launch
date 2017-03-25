@@ -9,6 +9,7 @@
 <launch>
   <arg name="record_camera" default="true" />
   <arg name="record_sensors" default="true" />
+  <arg name="record_logs" default="true" />
 
   <node pkg="rosbag" type="record" name="rosbag_record_camera"
        args="record -o /tmp/victoria-cameras /camera/color/image_raw /camera/color/camera_info /camera/depth/image_raw /camera/depth/points /camera/ir/camera_info /camera/ir/image_raw /camera/ir2/camera_info /camera/ir2/image_raw /compressed_image"
